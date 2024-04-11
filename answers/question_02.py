@@ -16,4 +16,11 @@ Notes:
 """
 
 def count_unique_chars(string_1, string_2):
-    "IMPLEMENT ME"
+    combined_string = string_1 + string_2
+    unique_chars = set(combined_string)
+    return len(unique_chars)
+
+print(count_unique_chars("apple", "play"))
+print(count_unique_chars("sore", "zebra"))
+print(count_unique_chars("a", "soup"))
+print(count_unique_chars("", ""))

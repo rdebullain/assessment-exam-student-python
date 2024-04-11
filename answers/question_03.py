@@ -10,4 +10,8 @@ Examples:
 """
 
 def reverse_capitalize(string):
-    "IMPLEMENT ME"
+    return string[::-1].upper()
+
+print(reverse_capitalize("abc"))
+print(reverse_capitalize("hellothere"))
+print(reverse_capitalize("input"))

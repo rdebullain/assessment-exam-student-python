@@ -20,4 +20,17 @@ Notes:
 
 """
 def equal_slices(total_slices, no_recipients, slices_each):
-    "IMPLEMENT ME"
+    if total_slices - (no_recipients * slices_each) >= 0:
+        x = True
+        y = (total_slices % (no_recipients * slices_each))
+        return (x, y)
+    elif total_slices - (no_recipients * slices_each) < 0:
+        x = False
+        y = None
+        return (x, y)
+
+print(equal_slices(11, 5, 2))
+print(equal_slices(11, 5, 3))
+print(equal_slices(8, 3, 2))
+print(equal_slices(8, 3, 3))
+print(equal_slices(24, 12, 2))

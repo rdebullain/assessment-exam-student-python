@@ -28,6 +28,10 @@ def equal_slices(total_slices, no_recipients, slices_each):
         x = False
         y = None
         return (x, y)
+    elif no_recipients == 0:
+        x = True
+        y = total_slices
+        return (x, y)
 
 print(equal_slices(11, 5, 2))
 print(equal_slices(11, 5, 3))

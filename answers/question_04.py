@@ -10,4 +10,11 @@ Examples:
 
 """
 def divisible(integer):
-    "IMPLEMENT ME"
+    if integer % 100 == 0:
+        return True
+    else:
+        return False
+    
+print(divisible(1))
+print(divisible(1000))
+print(divisible(100))
